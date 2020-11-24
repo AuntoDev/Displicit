@@ -6,7 +6,7 @@ Displicit uses [this TensorFlow model](https://github.com/gantman/nsfw_model). I
 ## About
 Displicit uses machine learning and URL block lists to help you block NSFW and explicit content from being posted in your server. Displicit is designed to be easily setup using the **d.settings** command.
 
-## Seems cool, but is it free
+## Seems cool, but is it free?
 As a baseline, servers get 20,000 requests each. If you need a higher quota, reach out to us.
 
 ## I need support! Where do I get it?

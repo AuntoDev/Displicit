@@ -1,4 +1,4 @@
-#### READ THE LICENSE FILE BEFORE USING THE CODE!
+#### THIS REPO'S FILES MAY INCLUDE EXPLICIT CONTENT
 
 ## Model
 Displicit uses [this TensorFlow model](https://github.com/gantman/nsfw_model). It is **required** for Displicit to work.

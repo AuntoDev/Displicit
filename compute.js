@@ -4,18 +4,10 @@ var axios = require("axios");
 var os = require("os");
 tf.enableProdMode();
 
-process.on('message', async msg => {
-    var res = await run(msg.url);
-
-    process.send(res);
-    process.exit();
-});
-
 async function run(url){
     var res = await axios.get(url, {
         responseType: "arraybuffer"
-    })
-    .catch(async(err) => {
+    }).catch(async(err) => {
         process.send({ err: true });
         process.exit();
     });
@@ -27,7 +19,7 @@ async function run(url){
 
     tf.engine().startScope();
 
-    var model = await nsfw.load("file://model/", { size: 299 });
+    var model = await nsfw.load("file://model/", { size: 299 }); // pass your model through here!
     var img = await tf.node.decodeImage(res.data, 3);
     var classes = await model.classify(img);
     

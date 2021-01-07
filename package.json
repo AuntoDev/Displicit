@@ -10,7 +10,7 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@tensorflow/tfjs-node": "^2.4.0",
-    "axios": "^0.20.0",
+    "axios": ">=0.21.1",
     "nsfwjs": "^2.2.0",
     "uniqid": "^5.2.0"
   }
